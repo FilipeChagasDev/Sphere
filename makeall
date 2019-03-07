@@ -1,12 +1,5 @@
 #!/bin/bash
 
-makesample=true
-if [[ $1 == "--nosample" ]]
-then
-	makesample=false
-	shift
-fi
-
 cd lib
 make $1 $2 || exit
 
@@ -41,9 +34,12 @@ cd ..
 
 cd ..
 
-if [[ $makesample == true ]]
-then
-	cd sample
-	./makelatest $1 $2 || exit
-	cd ..
-fi
+cd kernel
+make $1 $2 || exit
+cd ..
+
+rm kernel8.img
+mv kernel/kernel8.img kernel8.img
+
+cd ..
+

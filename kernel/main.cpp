@@ -8,7 +8,8 @@ int main (void)
 {
 	// cannot return here because some destructors used in CKernel are not implemented
 
-	CKernel Kernel;
+	SphereKernel Kernel;
+
 	if (!Kernel.Initialize ())
 	{
 		halt ();
