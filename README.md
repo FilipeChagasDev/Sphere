@@ -1,16 +1,30 @@
 # Sphere-OS
 Sphere is an operating system for raspberry pi 3.
-This software is based on the version available in January 2019 of the Circle environment. It does not contain the full Circle source code. Some parts were removed, others modified.
+This software is based in the Circle bare-metal environment.
 Circle repo. : https://github.com/rsta2/circle
 
 ## Build
 This project was maded to be builded in a Linux machine.
-To compile it, you must have installed the following repositories:
+To compile and simulate it with QEMU, you must have installed the following repositories:
 
-gcc-arm-none-eabi
-binutils-arm-none-eabi
-gcc-aarch64-linux-gnu
-g++-aarch64-linux-gnu
+binutils-aarch64-linux-gnu
+g++-aarch64-linux-gnu 
+build-essential 
+zlib1g-dev 
+pkg-config 
+libglib2.0-dev 
+binutils-dev 
+libboost-all-dev 
+autoconf 
+libtool 
+libssl-dev 
+libpixman-1-dev 
+libpython-dev 
+python-pip 
+python-capstone 
+virtualenv 
+libjpeg62 
+libgtk-3-dev
 
 to build the kernel, you need to put the following commands:
 

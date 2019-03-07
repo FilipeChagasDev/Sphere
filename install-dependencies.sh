@@ -1,3 +1,1 @@
-apt install make
-apt install binutils-aarch64-linux-gnu
-apt install g++-aarch64-linux-gnu
+apt install make binutils-aarch64-linux-gnu g++-aarch64-linux-gnu build-essential zlib1g-dev pkg-config libglib2.0-dev binutils-dev libboost-all-dev autoconf libtool libssl-dev libpixman-1-dev libpython-dev python-pip python-capstone virtualenv libjpeg62 libgtk-3-dev
